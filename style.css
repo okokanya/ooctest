@@ -1,72 +1,93 @@
 :root {
-    --left-stripe-margin: 35%;
+    --left-stripe-margin: 36%;
     --stripe-width: 70px;
     --stripe-gap: 30px;
     --beige: #d9d3d3;
     --dark-beige: #cfc9c9;
+    --dark-gray: #a29e9e;
+    --transparent: #00000000;
+    --black: #000000;
+    --deepBlue: #4737FF;
+    --orange: #F96241;
   }
-
 
 body {
     background-image: 
     linear-gradient(to right, var(--beige) 0, var(--beige) var(--left-stripe-margin), var(--dark-beige) var(--left-stripe-margin), var(--dark-beige) Calc(var(--left-stripe-margin) + var(--stripe-width)), var(--beige) Calc(var(--left-stripe-margin) + var(--stripe-width)), var(--beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) + var(--stripe-gap))), var(--dark-beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) + var(--stripe-gap))), var(--dark-beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) * 2 + var(--stripe-gap))), var(--dark-beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) * 2 + var(--stripe-gap))), var(--beige) Calc(var(--stripe-width) * 2 + var(--stripe-gap)));
-
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: black;
+    border: none;
 }
 
-.pTitle {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -1px;
-}
-
-.pMono {
-    font-family: Fira Sans;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 16.8px;
-    line-height: 100%;
-    letter-spacing: 4px;
-}
-
-.pNav {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+.mainWidth {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;
-    transition: 1s;
     border-bottom: none;
+    color: var(--dark-gray);
+    border-bottom: 1px solid var(--transparent);
 }
 
 a:hover{
     cursor: pointer;
-    border-bottom: 1px solid red;
-}
-nav, main {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-.pNav > div {
-    display: inline-block;
+    border-bottom: 2px solid var(--black);
+    transition: 0.2s;
+    color: var(--black);
 }
 
-.left, .right{
-    width: 40%;
-    border: 1px solid green;
+nav {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active {
+    color: black;
+}
+.navBlock {
+    width: 80%;
+}
+
+.navBlock a {
+    margin-right: 10%;
+}
+.rightNav, .leftNav {
+    width: 50%;
     justify-content: space-between;
     display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.leftMain, .rightMain {
+    width: 50%;
+}
+
+.leftMain {
+    padding: 10vh 0;
+}
+
+.textBlock {
+    display: block;
+    width: 444px;
+}
+
+.shareLinkBlock {
+    height: 50px;
+    display: flex;
+    margin-top: 70px;
+}
+
+.shareLinkBlock * {
+    margin-right: 30px;
 }

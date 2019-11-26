@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="buttons.css">
+
+
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <title>hello test</title>
 </head>
 <body>
+    <div class='mainWidth'>
         <nav>
-            <div class='left'>
-                <a href='/home'>
-                   <img src='./img/Logo.png'></div> 
-                </a>
-            <div class='right pNav'>
-                <div class='linkBlock'>
-                    <a href='/home'>home</a>
+            <div class='leftNav'>
+                <img
+                src="./img/logoGravity.svg"
+                alt="logo gravity">
+            </div> 
+            <div class='rightNav pNav'>
+                <div class='navBlock'>
+                    <a href='/home' class='active'>home</a>
                     <a href='/home'>contacts</a>
                 </div>
-                <div>
-                    <img src='./img/burg.png'>
-                </div>
+                <img src='./img/burg.png'>
             </div>
         </nav>
         <main>
-            <div class='left'>left</div> 
-            <div class='right'>right</div> 
+            <div class='leftMain'>
+                <h3 class='pMono'>Shooting Stars</h3>
+                <h1 class='pTitle'>Pictures In The Sky</h1>
+                <p class='textBlock'>Many people has the notion that enlightenment is one state. Many also believe that when it is attained, a person is forever in that state.</p>
+                <div class='shareLinkBlock'>
+                    <button class='blueGet button slideleft'>get started</button>
+                    <img src='./img/ictTwitter.svg'
+                    alt='twitter icon'>
+                    <img src='./img/icLinkedin.svg'
+                    alt='linkedin icon'>
+                    <img src='./img/icGoogle.svg'
+                    alt='google icon'>
+                </div>
+
+            </div> 
+            <div class='rightMain'>right</div> 
         </main>
-    <p class='pMono'>Shooting Stars</p>
-    <h1 class='pTitle'>Pictures In The Sky</h1>
-    
+
+</div>
 </body>
 </html>

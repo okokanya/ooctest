@@ -1,0 +1,50 @@
+
+.button {
+    font-family: Fira Sans;
+    width: 160px;
+    letter-spacing: 4px;
+    height: 50px;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+ }
+.button::before,
+.button::after {
+   content: '';
+   position: absolute;
+   left:0;
+   right:0;
+   top:0;
+   bottom: 0;
+   height: 100%;
+   background: var(--orange);
+   z-index: -1;
+   transform: translate3D(0,-101%,0);
+   transition: all .5s;
+}
+.button::before {
+   background: var(--deepBlue);
+   z-index: -2;
+   transform: translate3D(0,0,0);
+}
+.button:hover {
+   color:white;
+}
+.button:hover::after {
+   transform: translate3D(0,0,0);
+}
+.slideleft::after {
+    top:0;
+    z-index:-1;
+    transform: translate3D(-101%,0,0);
+ }
+ .slideleft:hover:after {
+    transform: translate3D(0,0,0);
+ }
