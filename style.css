@@ -1,0 +1,72 @@
+:root {
+    --left-stripe-margin: 35%;
+    --stripe-width: 70px;
+    --stripe-gap: 30px;
+    --beige: #d9d3d3;
+    --dark-beige: #cfc9c9;
+  }
+
+
+body {
+    background-image: 
+    linear-gradient(to right, var(--beige) 0, var(--beige) var(--left-stripe-margin), var(--dark-beige) var(--left-stripe-margin), var(--dark-beige) Calc(var(--left-stripe-margin) + var(--stripe-width)), var(--beige) Calc(var(--left-stripe-margin) + var(--stripe-width)), var(--beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) + var(--stripe-gap))), var(--dark-beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) + var(--stripe-gap))), var(--dark-beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) * 2 + var(--stripe-gap))), var(--dark-beige) Calc(var(--left-stripe-margin) + Calc(var(--stripe-width) * 2 + var(--stripe-gap))), var(--beige) Calc(var(--stripe-width) * 2 + var(--stripe-gap)));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.pTitle {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+
+.pMono {
+    font-family: Fira Sans;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 16.8px;
+    line-height: 100%;
+    letter-spacing: 4px;
+}
+
+.pNav {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+a {
+    text-decoration: none;
+    transition: 1s;
+    border-bottom: none;
+}
+
+a:hover{
+    cursor: pointer;
+    border-bottom: 1px solid red;
+}
+nav, main {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.pNav > div {
+    display: inline-block;
+}
+
+.left, .right{
+    width: 40%;
+    border: 1px solid green;
+    justify-content: space-between;
+    display: flex;
+}
