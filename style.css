@@ -30,6 +30,8 @@ body {
 a {
     text-decoration: none;
     border-bottom: none;
+    display: inline-block;
+    width: fit-content;
     color: var(--dark-gray);
     border-bottom: 1px solid var(--transparent);
 }
@@ -107,11 +109,21 @@ main {
 .blockClass {
     height: 1px;
     width: 1px;
-    margin-left: -170px;
+    margin-left: -160px;
     margin-top: 30px;
-    text-align: right;
     position: absolute;
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
+
+.rightMain {
+    position: relative;
+}
+.absoluteImg {
+    position: absolute;
+    top: 120px;
+    right: -60px;
+}
+
