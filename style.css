@@ -9,6 +9,7 @@
     --black: #000000;
     --deepBlue: #4737FF;
     --orange: #F96241;
+    --white: #ffffff;
   }
 
 body {
@@ -20,6 +21,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
+    border-color: transparent;
 }
 
 .mainWidth {
@@ -38,7 +40,7 @@ a {
 
 a:hover{
     cursor: pointer;
-    border-bottom: 2px solid var(--black);
+    border-bottom: 1px solid var(--black);
     transition: 0.2s;
     color: var(--black);
 }
@@ -54,6 +56,7 @@ nav {
 }
 .navBlock {
     width: 80%;
+    text-transform: capitalize;
 }
 
 .navBlock a {
@@ -77,6 +80,7 @@ main {
 
 .leftMain {
     padding: 10vh 0;
+    position: relative;
 }
 
 .textBlock {
@@ -109,11 +113,14 @@ main {
 .blockClass {
     height: 1px;
     width: 1px;
-    margin-left: -160px;
+    margin-left: -110px;
+    z-index: 2;
+    border: 20px solid var(--beige);
     margin-top: 30px;
     position: absolute;
     align-items: flex-end;
     display: flex;
+    background-color: var(--beige);
     flex-direction: column;
     overflow: hidden;
 }
@@ -126,4 +133,34 @@ main {
     top: 120px;
     right: -60px;
 }
+
+.buttonsNavNumb {
+    display: flex;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.buttonsNavNumb button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    margin-right: 24px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: black;
+    cursor: pointer;
+    background-image: none;
+}
+
+.buttonActive {
+    background: var(--orange)!important;
+    color: var(--white)!important;
+    background-image:none!important;
+    box-shadow: none!important;}
+
+
 
