@@ -21,7 +21,9 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    border-color: transparent;
+    box-shadow: none;
+    background-image: none;
+    outline: none;
 }
 
 .mainWidth {
@@ -51,9 +53,11 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 .active {
     color: black;
 }
+
 .navBlock {
     width: 80%;
     text-transform: capitalize;
@@ -62,6 +66,7 @@ nav {
 .navBlock a {
     margin-right: 10%;
 }
+
 .rightNav, .leftNav {
     width: 50%;
     justify-content: space-between;
@@ -91,32 +96,32 @@ main {
 .shareLinkBlock {
     height: 50px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: 70px;
 }
 
 .shareLinkBlock * {
     margin-right: 30px;
     width: 20px;
-    
 }
 
 .respNav {
     width: 34px;
     height: 34px;
     background-repeat: no-repeat;
-    background-image: url(./img/burg.png);
+    background-image: url('./img/burg.png');
     background-position-y: center;
     cursor: pointer;
     position: relative;
 }
+
 .blockClass {
     height: 1px;
     width: 1px;
     margin-left: -110px;
     z-index: 2;
     border: 20px solid var(--beige);
-    margin-top: 30px;
+    margin-top: 20px;
     position: absolute;
     align-items: flex-end;
     display: flex;
@@ -132,6 +137,7 @@ main {
     position: absolute;
     top: 120px;
     right: -60px;
+    animation: opacity 0.7s ease-in;
 }
 
 .buttonsNavNumb {
@@ -156,11 +162,21 @@ main {
     background-image: none;
 }
 
-.buttonActive {
+button:active {
     background: var(--orange)!important;
     color: var(--white)!important;
     background-image:none!important;
-    box-shadow: none!important;}
+    box-shadow: none!important;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0.3;
+    }
+      100% {
+        opacity: 1;
+    }
+  }
 
 
 
