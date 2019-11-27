@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="buttons.css">
+    <link rel="icon" href="img/icons8-g-26.png">
 
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
@@ -25,7 +26,14 @@
                     <a href='/home' class='active'>home</a>
                     <a href='/home'>contacts</a>
                 </div>
-                <img src='./img/burg.png'>
+                <div class='respNav' id='crossToPush' onClick='changeHeight()'>
+                    <div class='navLinkBlock blockClass' id='blockClass' >
+                        <a>lorem</a>
+                        <a>dolor amet</a>
+                        <a>sit amet</a>
+                        <a>dolor sit</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <main>
@@ -35,18 +43,25 @@
                 <p class='textBlock'>Many people has the notion that enlightenment is one state. Many also believe that when it is attained, a person is forever in that state.</p>
                 <div class='shareLinkBlock'>
                     <button class='blueGet button slideleft'>get started</button>
-                    <img src='./img/ictTwitter.svg'
-                    alt='twitter icon'>
-                    <img src='./img/icLinkedin.svg'
-                    alt='linkedin icon'>
-                    <img src='./img/icGoogle.svg'
-                    alt='google icon'>
-                </div>
+                    <a href='#'>
+                        <img src='./img/ictTwitter.svg'
+                        alt='twitter icon'>
+                        </a>
+                    <a href='#'>
+                        <img src='./img/icLinkedin.svg'
+                        alt='linkedin icon'>
+                    </a>
 
+                    <a href='#'>
+                        <img src='./img/icGoogle.svg'
+                        alt='google icon'>
+                    </a>
+                </div>
             </div> 
             <div class='rightMain'>right</div> 
         </main>
-
 </div>
+<script src='scripts.js'></script>
+
 </body>
 </html>
