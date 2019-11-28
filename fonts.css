@@ -1,24 +1,20 @@
 p {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 28px;
-    color: #222222;
     opacity: 0.7;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 h3 {
     padding-bottom: 20px;
 }
-h1 {
-    margin: 0;
-    padding-bottom: 30px;
 
-}
+
 .pTitle {
-    font-family: Fira Sans;
-    font-style: normal;
     font-weight: 600;
     font-size: 60px;
     line-height: 70px;
@@ -26,29 +22,14 @@ h1 {
 }
 
 .pMono {
-    font-family: Fira Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;    
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #222222;
 }
 
 .pNav {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 28px;
 }
-/* 
-.pButtons {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17.5475px;
-    line-height: 26px;
-    color: var(--white);
-} */

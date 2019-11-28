@@ -18,6 +18,9 @@ body {
 }
 
 * {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
     margin: 0;
     padding: 0;
     border: none;
@@ -28,6 +31,7 @@ body {
 
 .mainWidth {
     max-width: 1100px;
+    min-width: 1000px;
     margin: 0 auto;
 }
 
@@ -118,10 +122,10 @@ main {
 .blockClass {
     height: 1px;
     width: 1px;
-    margin-left: -110px;
+    margin-left: -150px;
     z-index: 2;
     border: 20px solid var(--beige);
-    margin-top: 20px;
+    margin-top: 30px;
     position: absolute;
     align-items: flex-end;
     display: flex;
@@ -133,6 +137,7 @@ main {
 .rightMain {
     position: relative;
 }
+
 .absoluteImg {
     position: absolute;
     top: 120px;
